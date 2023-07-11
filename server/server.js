@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(5000, () => {
+app.listen('https://technext-chart-api.onrender.com/', () => {
     console.log('Server is running on port 5000')
 })
