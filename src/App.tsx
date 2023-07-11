@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { Bar, CartesianGrid, ComposedChart, Legend, Line, Tooltip, XAxis, YAxis } from 'recharts'
 import axios from 'axios'
-
+import config from './config'
 function App() {
 
   const [data, setData] = useState()
@@ -11,7 +11,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000')
+    axios.get(`${config.backendUrl}`)
       .then((res) => {
         setData(res.data)
         setLoading(false)
