@@ -3,6 +3,7 @@ const cors = require('cors')
 const compression = require('compression')
 const axios = require('axios')
 const app = express()
+const PORT = process.env.PORT || 5000;
 app.use(compression())
 app.use(cors())
 
@@ -18,6 +19,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen('https://technext-chart-api.onrender.com/', () => {
+app.listen(PORT, () => {
     console.log('Server is running on port 5000')
 })
