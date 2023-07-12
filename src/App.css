@@ -1,0 +1,18 @@
+@keyframes textAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      }
+    100% {
+  transform: scale(1);  }
+  }
+  
+  .text-animation {
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  

@@ -26,7 +26,7 @@ function App() {
       {
         loading
           ?
-          <h2>Loading data...</h2>
+          <h2 className='text-animation'>Loading data...</h2>
           :
           <div>
             <h1>TechNext Bar/Line Chart</h1>
